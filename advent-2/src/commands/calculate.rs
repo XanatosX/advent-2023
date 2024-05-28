@@ -7,7 +7,7 @@ use crate::model::game::Game;
 use crate::model::game_round::GameRound;
 
 #[derive(Parser, Debug)]
-#[clap(name = "edit", version = "1.0", author = "Xanatos", about = "Command to calculate game result")]
+#[clap(name = "calculate", version = "1.0", author = "Xanatos", about = "Command to calculate game result")]
 pub struct Calculate 
 {
     #[arg(short, long)]
