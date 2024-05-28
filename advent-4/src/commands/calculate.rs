@@ -1,5 +1,3 @@
-use std::env::current_exe;
-
 use advent_shared::command::Command;
 use advent_shared::file_loader::FileLoader;
 use advent_shared::{confirm_copy_clipboard, print_result};
@@ -68,7 +66,7 @@ impl Calculate {
                 current_number += character.to_string().as_str();
                 continue;
             }
-            if (current_number.is_empty()) {
+            if current_number.is_empty() {
                 continue;
             }
             let number = current_number.parse::<i32>().unwrap();
