@@ -2,13 +2,13 @@ mod commands;
 
 use advent_shared::command::Command;
 use clap::{command, Parser};
-use commands::calculator::Calculator;
+use commands::calculate::Calculate;
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 enum Args
 {
-    Calculate(Calculator)
+    Calculate(Calculate)
 }
 
 

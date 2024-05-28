@@ -5,7 +5,7 @@ use clap::Parser;
 
 #[derive(Parser, Debug)]
 #[clap(name = "edit", version = "1.0", author = "Xanatos", about = "Command to calculate the coordinates")]
-pub struct Calculator
+pub struct Calculate
 {
     #[arg(short, long)]
     input_path: String,
@@ -14,7 +14,7 @@ pub struct Calculator
    replace_letters: bool,
 }
 
-impl Command for Calculator {
+impl Command for Calculate {
     fn execute(&self) {
         let lines = self.load_coordinate_files();
         let final_coordinate = self.sum_all_coordinates(lines);
@@ -32,7 +32,7 @@ impl Command for Calculator {
     }
 }
 
-impl Calculator
+impl Calculate
 {
     fn load_coordinate_files(&self) -> Vec<String>
     {
