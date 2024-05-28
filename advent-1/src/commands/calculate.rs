@@ -8,10 +8,10 @@ use clap::Parser;
 pub struct Calculate
 {
     #[arg(short, long)]
-    input_path: String,
+    input: String,
 
-   #[arg(long, short, action, default_value_t=false)]
-   replace_letters: bool,
+    #[arg(long, short, action, default_value_t=false)]
+    replace_letters: bool,
 }
 
 impl Command for Calculate {
@@ -36,7 +36,7 @@ impl Calculate
 {
     fn load_coordinate_files(&self) -> Vec<String>
     {
-        let mut loader = FileLoader::new(&self.input_path);
+        let mut loader = FileLoader::new(&self.input);
         let mut lines = Vec::new();
         for line in loader.get_file_lines().expect("Data was not read")
         {

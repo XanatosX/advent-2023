@@ -1,4 +1,4 @@
-# Advent 3
+# Advent 2
 
 To use this cli run the following command:
 
@@ -6,7 +6,7 @@ To use this cli run the following command:
 
 to solve the second riddle use
 
-`cargo run calculate --input {path to input file} --gear-ratio`
+`cargo run calculate --input {path to input file} --get_min_cubes`
 
 [Go back to overview][overview]
 

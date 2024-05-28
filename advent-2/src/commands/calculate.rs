@@ -11,7 +11,7 @@ use crate::model::game_round::GameRound;
 pub struct Calculate 
 {
     #[arg(short, long)]
-    input_path: String,
+    input: String,
 
     #[arg(long, default_value_t = 12)]
     max_red: u32,
@@ -63,7 +63,7 @@ impl Command for Calculate {
 impl  Calculate {
     fn load_lines_of_file(&self) -> Vec<String>
     {
-        let mut loader = FileLoader::new(&self.input_path);
+        let mut loader = FileLoader::new(&self.input);
         loader.get_file_lines().expect("Data was not read")
     }
 
