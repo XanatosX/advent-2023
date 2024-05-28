@@ -1,0 +1,8 @@
+[package]
+name = "advent-2023-3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+advent-shared = { path = "../advent-shared"}
+clap = { version = "4.5.4", features = ["derive"] }
