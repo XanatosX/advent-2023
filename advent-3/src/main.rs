@@ -1,6 +1,6 @@
 use advent_shared::command::Command;
 use clap::{command, Parser};
-use commands::calculate_command::Calculator;
+use commands::calculate::Calculate;
 
 mod commands;
 mod model;
@@ -9,7 +9,7 @@ mod model;
 #[command(version, about, long_about = None)]
 enum Args
 {
-    Calculate(Calculator)
+    Calculate(Calculate)
 }
 
 fn main() {

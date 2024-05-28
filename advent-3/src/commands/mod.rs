@@ -1,1 +1,1 @@
-pub mod calculate_command;
+pub mod calculate;
