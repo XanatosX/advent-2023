@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "advent-2023-3"
+name = "advent-3"
 version = "0.1.0"
 dependencies = [
  "advent-shared",
