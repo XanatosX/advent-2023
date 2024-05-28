@@ -1,0 +1,10 @@
+[package]
+name = "advent-shared"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = "1.0.61"
+dialoguer = "0.11.0"
+cli-clipboard = "0.4.0"
+colored = "2.1.0"

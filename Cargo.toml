@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+  "advent-shared",
+  "advent-1",
+  "advent-2", 
+]
