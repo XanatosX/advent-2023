@@ -27,6 +27,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "advent-4"
+version = "0.1.0"
+dependencies = [
+ "advent-shared",
+ "clap",
+]
+
+[[package]]
 name = "advent-shared"
 version = "0.1.0"
 dependencies = [
