@@ -10,6 +10,7 @@ I do use this challenge to get familiar with rust and learn something new. I do 
 - [Advent 1][advent-1]
 - [Advent 2][advent-2]
 - [Advent 3][advent-3]
+- [Advent 3][advent-4]
 
 
 
@@ -17,3 +18,4 @@ I do use this challenge to get familiar with rust and learn something new. I do 
 [advent-1]: advent-1/README.md
 [advent-2]: advent-2/README.md
 [advent-3]: advent-3/README.md
+[advent-4]: advent-4/README.md
