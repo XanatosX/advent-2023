@@ -1,5 +1,3 @@
-use std::string;
-
 use advent_shared::command::Command;
 use advent_shared::file_loader::FileLoader;
 use advent_shared::{confirm_copy_clipboard, print_result};
@@ -9,11 +7,9 @@ use crate::model::scratchcard::Scretchcard;
 
 #[derive(Parser, Debug)]
 #[clap(name = "calculate", version = "1.0", author = "Xanatos", about = "Command to calculate game result")]
-pub struct Calculate 
-{
+pub struct Calculate  {
     #[arg(short, long)]
     input: String,
-
 
     #[arg(long, short, action, default_value_t=false)]
     copies_mode: bool
