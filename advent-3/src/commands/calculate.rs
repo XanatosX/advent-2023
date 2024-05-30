@@ -5,7 +5,7 @@ use crate::model::schematic_number::SchematicNumber;
 
 
 #[derive(Parser, Debug)]
-#[clap(name = "calculator", version = "1.0", author = "Xanatos", about = "Command to solve the schematics")]
+#[clap(name = "calculate", version = "1.0", author = "Xanatos", about = "Command to solve the schematics")]
 pub struct Calculate{
     #[arg(long, short)]
     input: String,

@@ -4,7 +4,7 @@ use advent_shared::{command::Command, confirm_copy_clipboard, file_loader::FileL
 use clap::Parser;
 
 #[derive(Parser, Debug)]
-#[clap(name = "edit", version = "1.0", author = "Xanatos", about = "Command to calculate the coordinates")]
+#[clap(name = "calculate", version = "1.0", author = "Xanatos", about = "Command to calculate the coordinates")]
 pub struct Calculate
 {
     #[arg(short, long)]
